@@ -15,6 +15,9 @@ class ProductSeeder extends Seeder
         //
         DB::table('products') -> insert([
             'name' => Str::random(10),
+            'price' => rand(100, 1000),
+            'description' => Str::random(10),
+            
         ]);
     }
 }
